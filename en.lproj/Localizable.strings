@@ -1,0 +1,19 @@
+/* 
+  Localizable.strings
+  ESOStatus
+
+  Created by Marc Heimann on 02.05.14.
+  Copyright (c) 2014 Byte Software. All rights reserved.
+*/
+
+"server.title.eu.text" = "Megaserver Europe";
+"server.title.na.text" = "Megaserver North America";
+"footer.label.text" = "Service © Byte Software | ";
+
+"menu.overview.button.text" = "Status";
+"menu.statistic.button.text" = "Statistiken";
+"menu.news.button.text" = "News";
+"menu.information.button.text" = "Info";
+"menu.proversion.button.text" = "Pro Version";
+
+"information.infotext" = "© 2014 ZeniMax Media Inc, Bethesda Softworks LLC, The Elder Scrolls Online and related logos and designs Trademarks are the property of their respective owners. All Rights Reserved.";

@@ -1,0 +1,40 @@
+/* 
+   Localizable.strings
+   MobileAuth
+
+   Created by Marc Heimann on 18.05.11.
+   Copyright 2011 Invasoft GmbH. All rights reserved.
+ */
+
+// Globals
+
+"appname"					= "Mobile Authenticator";
+
+"label.disclaim1"			= "MobileAuth ist ein Produkt der FXdirekt Bank AG";
+"label.disclaim2"			= "©2011 Alle Rechte vorbehalten";
+
+// MainView
+
+"btn.main.setup"			= "Einrichten"; 
+"btn.main.info"				= "Info"; 
+
+// SetupView
+
+"label.setup.header"		= "Einrichten";
+"label.setup.code"			= "Registrierungscode eingeben:";
+"alert.setup.title"			= "Neuen Code registrieren";
+"alert.setup.overwrite"		= "Sie haben bereits einen Code registriert. Sollten Sie diesen Code abschicken, werden Sie, eventuell, nicht mehr in der Lage sein sich am FEXtrader anzumelden. Sollten Sie ihren Code von ihrem Benutzerportal der FXdirekt Bank AG erhalten haben, klicken Sie bitte jetzt auf Fortsetzen.";
+"alert.setup.btn.continue"	= "Fortsetzen";
+"alert.setup.btn.abort"		= "Abbrechen";
+
+"alert.setup.uuidfail.title"= "Ungültiger Registrierungscode";
+"alert.setup.uuidfail.text"	= "Der eingegebene Code war ungültig. Bitte überprüfen Sie ihren Code und versuchen Sie es erneut.";
+"alert.setup.uuidfail.btn"  = "Ok";
+
+"btn.setup.send"			= "Abschicken"; 
+"btn.setup.back"			= "Zurück"; 
+
+
+// InfoView
+"label.info.header"			= "Info";
+"info.text"					= "So verwenden Sie Mobile Auth:\r\n\r\n1. Begeben Sie sich auf http://www.fxdirekt.de, klicken Sie auf Kundenlogin und melden Sie sich mit ihren FEXtrader Anmeldedaten an.\r\n\r\n2. Klicken Sie auf \"Mobile Authenticator\".\r\n\r\n3. Geben sie den Registrierungscode der ihnen in ihrem Benutzerportal angezeigt wird in das Textfeld unter \"Einrichten\" in ihrem Authenticator ein und drücken Sie den Button \"Abschicken\".\r\n\r\n4. Verwenden Sie nun den Authenticator Code der ihnen auf der Hauptseite des Authenticators angezeigt wird als weiteres Sicherheitsmerkmal für ihren Login am FEXtrader pro, web oder mobile.";

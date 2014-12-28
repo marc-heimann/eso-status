@@ -1,0 +1,653 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		490A2E79191598AD00865088 /* Launch640x1136.png in Resources */ = {isa = PBXBuildFile; fileRef = 490A2E78191598AD00865088 /* Launch640x1136.png */; };
+		490A2E7B19159B2300865088 /* AppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 490A2E7A19159B2300865088 /* AppIcon.png */; };
+		492F89E3193E62EB0075315C /* state_balken_offline.png in Resources */ = {isa = PBXBuildFile; fileRef = 492F89E2193E62EB0075315C /* state_balken_offline.png */; };
+		494E49ED19144161003BAD12 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 494E49EC19144089003BAD12 /* Localizable.strings */; };
+		494E49EE1914416C003BAD12 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49A118731912CF630075965D /* Main_iPhone.storyboard */; };
+		494E49F219144620003BAD12 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49A118761912CF630075965D /* Main_iPad.storyboard */; };
+		49A118621912CF630075965D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49A118611912CF630075965D /* Foundation.framework */; };
+		49A118641912CF630075965D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49A118631912CF630075965D /* CoreGraphics.framework */; };
+		49A118661912CF630075965D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49A118651912CF630075965D /* UIKit.framework */; };
+		49A1186E1912CF630075965D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A1186D1912CF630075965D /* main.m */; };
+		49A118721912CF630075965D /* byteAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A118711912CF630075965D /* byteAppDelegate.m */; };
+		49A1187B1912CF630075965D /* byteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A1187A1912CF630075965D /* byteViewController.m */; };
+		49A1187D1912CF630075965D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49A1187C1912CF630075965D /* Images.xcassets */; };
+		49A118841912CF630075965D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49A118831912CF630075965D /* XCTest.framework */; };
+		49A118851912CF630075965D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49A118611912CF630075965D /* Foundation.framework */; };
+		49A118861912CF630075965D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49A118651912CF630075965D /* UIKit.framework */; };
+		49A1188E1912CF630075965D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 49A1188C1912CF630075965D /* InfoPlist.strings */; };
+		49A118901912CF630075965D /* ESOStatusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A1188F1912CF630075965D /* ESOStatusTests.m */; };
+		49A1189E1912D1260075965D /* eso-status-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 49A1189D1912D1260075965D /* eso-status-logo.png */; };
+		49A118A21912D9B10075965D /* WebRequestor.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A118A11912D9B10075965D /* WebRequestor.m */; };
+		49A118B11912DA240075965D /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A118A61912DA240075965D /* NSObject+SBJSON.m */; };
+		49A118B21912DA240075965D /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A118A81912DA240075965D /* NSString+SBJSON.m */; };
+		49A118B31912DA240075965D /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A118AA1912DA240075965D /* SBJSON.m */; };
+		49A118B41912DA240075965D /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A118AC1912DA240075965D /* SBJsonBase.m */; };
+		49A118B51912DA240075965D /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A118AE1912DA240075965D /* SBJsonParser.m */; };
+		49A118B61912DA240075965D /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A118B01912DA240075965D /* SBJsonWriter.m */; };
+		49A118BB1912E55B0075965D /* Planewalker.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 49A118BA1912E4550075965D /* Planewalker.ttf */; };
+		49A118D01912FAEC0075965D /* eso_01.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 49A118CD1912F66A0075965D /* eso_01.mp4 */; };
+		49A28290192FED1800EFA1C2 /* stats_overlay_online.png in Resources */ = {isa = PBXBuildFile; fileRef = 49A2828F192FED1800EFA1C2 /* stats_overlay_online.png */; };
+		49A28292192FED2300EFA1C2 /* stats_overlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 49A28291192FED2300EFA1C2 /* stats_overlay.png */; };
+		49A28294192FED2A00EFA1C2 /* state_balken_online.png in Resources */ = {isa = PBXBuildFile; fileRef = 49A28293192FED2A00EFA1C2 /* state_balken_online.png */; };
+		49A28298192FEE7600EFA1C2 /* flag_eu.png in Resources */ = {isa = PBXBuildFile; fileRef = 49A28295192FEE7600EFA1C2 /* flag_eu.png */; };
+		49A28299192FEE7600EFA1C2 /* flag_us.png in Resources */ = {isa = PBXBuildFile; fileRef = 49A28296192FEE7600EFA1C2 /* flag_us.png */; };
+		49A2829A192FEE7600EFA1C2 /* pc-mac.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49A28297192FEE7600EFA1C2 /* pc-mac.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		49A118871912CF630075965D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49A118561912CF630075965D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49A1185D1912CF630075965D;
+			remoteInfo = ESOStatus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		490A2E78191598AD00865088 /* Launch640x1136.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Launch640x1136.png; sourceTree = "<group>"; };
+		490A2E7A19159B2300865088 /* AppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon.png; sourceTree = "<group>"; };
+		492F89E2193E62EB0075315C /* state_balken_offline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = state_balken_offline.png; sourceTree = "<group>"; };
+		494E49EB19144089003BAD12 /* Base */ = {isa = PBXFileReference; explicitFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		494E49EF191441B2003BAD12 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		494E49F1191442DC003BAD12 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main_iPhone.strings; sourceTree = "<group>"; };
+		494E49F419144630003BAD12 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main_iPad.strings; sourceTree = "<group>"; };
+		49A1185E1912CF630075965D /* ESO Status.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ESO Status.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		49A118611912CF630075965D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		49A118631912CF630075965D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		49A118651912CF630075965D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		49A118691912CF630075965D /* ESO Status-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ESO Status-Info.plist"; sourceTree = "<group>"; };
+		49A1186D1912CF630075965D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		49A1186F1912CF630075965D /* ESO Status-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ESO Status-Prefix.pch"; sourceTree = "<group>"; };
+		49A118701912CF630075965D /* byteAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = byteAppDelegate.h; sourceTree = "<group>"; };
+		49A118711912CF630075965D /* byteAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = byteAppDelegate.m; sourceTree = "<group>"; };
+		49A118741912CF630075965D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		49A118771912CF630075965D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		49A118791912CF630075965D /* byteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = byteViewController.h; sourceTree = "<group>"; };
+		49A1187A1912CF630075965D /* byteViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = byteViewController.m; sourceTree = "<group>"; };
+		49A1187C1912CF630075965D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		49A118821912CF630075965D /* ESO StatusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ESO StatusTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		49A118831912CF630075965D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		49A1188B1912CF630075965D /* ESO StatusTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ESO StatusTests-Info.plist"; sourceTree = "<group>"; };
+		49A1188D1912CF630075965D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		49A1188F1912CF630075965D /* ESOStatusTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ESOStatusTests.m; sourceTree = "<group>"; };
+		49A1189D1912D1260075965D /* eso-status-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "eso-status-logo.png"; sourceTree = "<group>"; };
+		49A118A01912D9B10075965D /* WebRequestor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebRequestor.h; sourceTree = "<group>"; };
+		49A118A11912D9B10075965D /* WebRequestor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebRequestor.m; sourceTree = "<group>"; };
+		49A118A41912DA240075965D /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		49A118A51912DA240075965D /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		49A118A61912DA240075965D /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		49A118A71912DA240075965D /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		49A118A81912DA240075965D /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		49A118A91912DA240075965D /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
+		49A118AA1912DA240075965D /* SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJSON.m; sourceTree = "<group>"; };
+		49A118AB1912DA240075965D /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		49A118AC1912DA240075965D /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
+		49A118AD1912DA240075965D /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		49A118AE1912DA240075965D /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		49A118AF1912DA240075965D /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		49A118B01912DA240075965D /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		49A118BA1912E4550075965D /* Planewalker.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Planewalker.ttf; sourceTree = "<group>"; };
+		49A118CD1912F66A0075965D /* eso_01.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = eso_01.mp4; sourceTree = "<group>"; };
+		49A118CE1912FA080075965D /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		49A2828F192FED1800EFA1C2 /* stats_overlay_online.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stats_overlay_online.png; sourceTree = "<group>"; };
+		49A28291192FED2300EFA1C2 /* stats_overlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stats_overlay.png; sourceTree = "<group>"; };
+		49A28293192FED2A00EFA1C2 /* state_balken_online.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = state_balken_online.png; sourceTree = "<group>"; };
+		49A28295192FEE7600EFA1C2 /* flag_eu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flag_eu.png; sourceTree = "<group>"; };
+		49A28296192FEE7600EFA1C2 /* flag_us.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flag_us.png; sourceTree = "<group>"; };
+		49A28297192FEE7600EFA1C2 /* pc-mac.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "pc-mac.jpg"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		49A1185B1912CF630075965D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49A118641912CF630075965D /* CoreGraphics.framework in Frameworks */,
+				49A118661912CF630075965D /* UIKit.framework in Frameworks */,
+				49A118621912CF630075965D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49A1187F1912CF630075965D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49A118841912CF630075965D /* XCTest.framework in Frameworks */,
+				49A118861912CF630075965D /* UIKit.framework in Frameworks */,
+				49A118851912CF630075965D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		49A118551912CF630075965D = {
+			isa = PBXGroup;
+			children = (
+				49A118671912CF630075965D /* ESOStatus */,
+				49A118891912CF630075965D /* ESOStatusTests */,
+				49A118601912CF630075965D /* Frameworks */,
+				49A1185F1912CF630075965D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		49A1185F1912CF630075965D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				49A1185E1912CF630075965D /* ESO Status.app */,
+				49A118821912CF630075965D /* ESO StatusTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		49A118601912CF630075965D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				49A118CE1912FA080075965D /* MediaPlayer.framework */,
+				49A118611912CF630075965D /* Foundation.framework */,
+				49A118631912CF630075965D /* CoreGraphics.framework */,
+				49A118651912CF630075965D /* UIKit.framework */,
+				49A118831912CF630075965D /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		49A118671912CF630075965D /* ESOStatus */ = {
+			isa = PBXGroup;
+			children = (
+				49A1189B1912CFA40075965D /* UI */,
+				49A1189A1912CF730075965D /* Resources */,
+				49A118991912CF6C0075965D /* Classes */,
+				49A1187C1912CF630075965D /* Images.xcassets */,
+				49A118681912CF630075965D /* Supporting Files */,
+			);
+			path = ESOStatus;
+			sourceTree = "<group>";
+		};
+		49A118681912CF630075965D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				49A118691912CF630075965D /* ESO Status-Info.plist */,
+				49A1186D1912CF630075965D /* main.m */,
+				49A1186F1912CF630075965D /* ESO Status-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		49A118891912CF630075965D /* ESOStatusTests */ = {
+			isa = PBXGroup;
+			children = (
+				49A1188F1912CF630075965D /* ESOStatusTests.m */,
+				49A1188A1912CF630075965D /* Supporting Files */,
+			);
+			path = ESOStatusTests;
+			sourceTree = "<group>";
+		};
+		49A1188A1912CF630075965D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				49A1188B1912CF630075965D /* ESO StatusTests-Info.plist */,
+				49A1188C1912CF630075965D /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		49A118991912CF6C0075965D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				49A118A31912DA150075965D /* JSON */,
+				49A1189F1912D9780075965D /* Network */,
+				49A118701912CF630075965D /* byteAppDelegate.h */,
+				49A118711912CF630075965D /* byteAppDelegate.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		49A1189A1912CF730075965D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				494E49EC19144089003BAD12 /* Localizable.strings */,
+				49A118BC1912E6D90075965D /* Videos */,
+				49A118B91912E4480075965D /* Fonts */,
+				49A1189C1912D11D0075965D /* Images */,
+				49A118731912CF630075965D /* Main_iPhone.storyboard */,
+				49A118761912CF630075965D /* Main_iPad.storyboard */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		49A1189B1912CFA40075965D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				49A118791912CF630075965D /* byteViewController.h */,
+				49A1187A1912CF630075965D /* byteViewController.m */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		49A1189C1912D11D0075965D /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				492F89E2193E62EB0075315C /* state_balken_offline.png */,
+				49A28295192FEE7600EFA1C2 /* flag_eu.png */,
+				49A28296192FEE7600EFA1C2 /* flag_us.png */,
+				49A28297192FEE7600EFA1C2 /* pc-mac.jpg */,
+				49A28293192FED2A00EFA1C2 /* state_balken_online.png */,
+				49A28291192FED2300EFA1C2 /* stats_overlay.png */,
+				49A2828F192FED1800EFA1C2 /* stats_overlay_online.png */,
+				490A2E7A19159B2300865088 /* AppIcon.png */,
+				490A2E78191598AD00865088 /* Launch640x1136.png */,
+				49A1189D1912D1260075965D /* eso-status-logo.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		49A1189F1912D9780075965D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				49A118A01912D9B10075965D /* WebRequestor.h */,
+				49A118A11912D9B10075965D /* WebRequestor.m */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		49A118A31912DA150075965D /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				49A118A41912DA240075965D /* JSON.h */,
+				49A118A51912DA240075965D /* NSObject+SBJSON.h */,
+				49A118A61912DA240075965D /* NSObject+SBJSON.m */,
+				49A118A71912DA240075965D /* NSString+SBJSON.h */,
+				49A118A81912DA240075965D /* NSString+SBJSON.m */,
+				49A118A91912DA240075965D /* SBJSON.h */,
+				49A118AA1912DA240075965D /* SBJSON.m */,
+				49A118AB1912DA240075965D /* SBJsonBase.h */,
+				49A118AC1912DA240075965D /* SBJsonBase.m */,
+				49A118AD1912DA240075965D /* SBJsonParser.h */,
+				49A118AE1912DA240075965D /* SBJsonParser.m */,
+				49A118AF1912DA240075965D /* SBJsonWriter.h */,
+				49A118B01912DA240075965D /* SBJsonWriter.m */,
+			);
+			name = JSON;
+			sourceTree = "<group>";
+		};
+		49A118B91912E4480075965D /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				49A118BA1912E4550075965D /* Planewalker.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		49A118BC1912E6D90075965D /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				49A118CD1912F66A0075965D /* eso_01.mp4 */,
+			);
+			name = Videos;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		49A1185D1912CF630075965D /* ESO Status */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49A118931912CF630075965D /* Build configuration list for PBXNativeTarget "ESO Status" */;
+			buildPhases = (
+				49A1185A1912CF630075965D /* Sources */,
+				49A1185B1912CF630075965D /* Frameworks */,
+				49A1185C1912CF630075965D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ESO Status";
+			productName = ESOStatus;
+			productReference = 49A1185E1912CF630075965D /* ESO Status.app */;
+			productType = "com.apple.product-type.application";
+		};
+		49A118811912CF630075965D /* ESO StatusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49A118961912CF630075965D /* Build configuration list for PBXNativeTarget "ESO StatusTests" */;
+			buildPhases = (
+				49A1187E1912CF630075965D /* Sources */,
+				49A1187F1912CF630075965D /* Frameworks */,
+				49A118801912CF630075965D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				49A118881912CF630075965D /* PBXTargetDependency */,
+			);
+			name = "ESO StatusTests";
+			productName = ESOStatusTests;
+			productReference = 49A118821912CF630075965D /* ESO StatusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		49A118561912CF630075965D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = byte;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Byte Software";
+				TargetAttributes = {
+					49A118811912CF630075965D = {
+						TestTargetID = 49A1185D1912CF630075965D;
+					};
+				};
+			};
+			buildConfigurationList = 49A118591912CF630075965D /* Build configuration list for PBXProject "ESO Status" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 49A118551912CF630075965D;
+			productRefGroup = 49A1185F1912CF630075965D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				49A1185D1912CF630075965D /* ESO Status */,
+				49A118811912CF630075965D /* ESO StatusTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		49A1185C1912CF630075965D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				494E49F219144620003BAD12 /* Main_iPad.storyboard in Resources */,
+				494E49EE1914416C003BAD12 /* Main_iPhone.storyboard in Resources */,
+				490A2E7B19159B2300865088 /* AppIcon.png in Resources */,
+				49A28290192FED1800EFA1C2 /* stats_overlay_online.png in Resources */,
+				494E49ED19144161003BAD12 /* Localizable.strings in Resources */,
+				49A1187D1912CF630075965D /* Images.xcassets in Resources */,
+				49A2829A192FEE7600EFA1C2 /* pc-mac.jpg in Resources */,
+				49A118D01912FAEC0075965D /* eso_01.mp4 in Resources */,
+				49A28298192FEE7600EFA1C2 /* flag_eu.png in Resources */,
+				490A2E79191598AD00865088 /* Launch640x1136.png in Resources */,
+				492F89E3193E62EB0075315C /* state_balken_offline.png in Resources */,
+				49A28292192FED2300EFA1C2 /* stats_overlay.png in Resources */,
+				49A118BB1912E55B0075965D /* Planewalker.ttf in Resources */,
+				49A1189E1912D1260075965D /* eso-status-logo.png in Resources */,
+				49A28294192FED2A00EFA1C2 /* state_balken_online.png in Resources */,
+				49A28299192FEE7600EFA1C2 /* flag_us.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49A118801912CF630075965D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49A1188E1912CF630075965D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		49A1185A1912CF630075965D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49A118B11912DA240075965D /* NSObject+SBJSON.m in Sources */,
+				49A118B61912DA240075965D /* SBJsonWriter.m in Sources */,
+				49A118B41912DA240075965D /* SBJsonBase.m in Sources */,
+				49A118721912CF630075965D /* byteAppDelegate.m in Sources */,
+				49A118A21912D9B10075965D /* WebRequestor.m in Sources */,
+				49A118B31912DA240075965D /* SBJSON.m in Sources */,
+				49A1187B1912CF630075965D /* byteViewController.m in Sources */,
+				49A118B51912DA240075965D /* SBJsonParser.m in Sources */,
+				49A118B21912DA240075965D /* NSString+SBJSON.m in Sources */,
+				49A1186E1912CF630075965D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49A1187E1912CF630075965D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49A118901912CF630075965D /* ESOStatusTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		49A118881912CF630075965D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49A1185D1912CF630075965D /* ESO Status */;
+			targetProxy = 49A118871912CF630075965D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		494E49EC19144089003BAD12 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				494E49EB19144089003BAD12 /* Base */,
+				494E49EF191441B2003BAD12 /* en */,
+			);
+			name = Localizable.strings;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		49A118731912CF630075965D /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49A118741912CF630075965D /* Base */,
+				494E49F1191442DC003BAD12 /* en */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		49A118761912CF630075965D /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49A118771912CF630075965D /* Base */,
+				494E49F419144630003BAD12 /* en */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		49A1188C1912CF630075965D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49A1188D1912CF630075965D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		49A118911912CF630075965D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		49A118921912CF630075965D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		49A118941912CF630075965D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ESOStatus/ESO Status-Prefix.pch";
+				INFOPLIST_FILE = "ESOStatus/ESO Status-Info.plist";
+				PRODUCT_NAME = "ESO Status";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		49A118951912CF630075965D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ESOStatus/ESO Status-Prefix.pch";
+				INFOPLIST_FILE = "ESOStatus/ESO Status-Info.plist";
+				PRODUCT_NAME = "ESO Status";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		49A118971912CF630075965D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ESOStatus.app/ESOStatus";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ESOStatus/ESOStatus-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ESOStatusTests/ESO StatusTests-Info.plist";
+				PRODUCT_NAME = "ESO StatusTests";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		49A118981912CF630075965D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ESOStatus.app/ESOStatus";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ESOStatus/ESOStatus-Prefix.pch";
+				INFOPLIST_FILE = "ESOStatusTests/ESO StatusTests-Info.plist";
+				PRODUCT_NAME = "ESO StatusTests";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		49A118591912CF630075965D /* Build configuration list for PBXProject "ESO Status" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49A118911912CF630075965D /* Debug */,
+				49A118921912CF630075965D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49A118931912CF630075965D /* Build configuration list for PBXNativeTarget "ESO Status" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49A118941912CF630075965D /* Debug */,
+				49A118951912CF630075965D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49A118961912CF630075965D /* Build configuration list for PBXNativeTarget "ESO StatusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49A118971912CF630075965D /* Debug */,
+				49A118981912CF630075965D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 49A118561912CF630075965D /* Project object */;
+}
